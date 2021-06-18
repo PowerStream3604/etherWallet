@@ -5,9 +5,9 @@
 ### the way you get the balance for ether and other erc20 token is different.
 
 if you create provider like this, it might not return balance with the accurate amount
-```
+```javascript
 new ethers.getDefaultProvider(currentNetwork, projectId);
-```
+```javascript
 I recommend you to create provider according to the api you use
 ```
 new ethers.providers.EtherscanProvider
@@ -23,7 +23,7 @@ new ethers.providers.JsonRpcProvider
 this is how you create a function to return the balance of the address you give as parameter
 
 
-```
+```javascript
 // whether to use this as a globale variable is your choice
 window.ethersProvider = new ethers.providers.InfuraProvider(localStorage.getItem('user_network'));
 
