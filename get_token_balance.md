@@ -7,9 +7,9 @@
 if you create provider like this, it might not return balance with the accurate amount
 ```javascript
 new ethers.getDefaultProvider(currentNetwork, projectId);
-```javascript
-I recommend you to create provider according to the api you use
 ```
+I recommend you to create provider according to the api you use
+```javascript
 new ethers.providers.EtherscanProvider
 
 new ethers.providers.InfuraProvider
